@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AlertBox</title>
+
+<script>
+function displayGreeting(){
+    const now=new Date();
+    const hour=now.gethours();
+let greeting;
+if(hour < 12){
+greeting="GOOD MORNING";
+}
+else if(hour < 18){
+greeting="GOOD AFTERNOON";
+}
+else{
+greeting="GOOD EVENING";
+}
+alert(greeting);
+}
+window.onload=displayGreeting;
+</script>
+</head>
+<body>
+</body>
+</html>
